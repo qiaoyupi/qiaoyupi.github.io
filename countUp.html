@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>演示计数 | Joe Blog</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="favicon.ico">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/icons/192.png">
+    <link rel="mask-icon" href="/icons/logo.svg" color="#3eaf7c">
+    <script async="true" src="https://www.googletagmanager.com/gtag/js?id=G-KXRDDJLR1B"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-KXRDDJLR1B');
+  
+    </script>
+    <meta name="description" content="vue,vite,webpack,随笔,日记">
+    <meta name="keywords" content="Blog, 笔记, Joe">
+    <meta name="author" content="Joe">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/icons/144.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/assets/css/0.styles.0ad39d54.css" as="style"><link rel="preload" href="/assets/js/app.d5cc5d71.js" as="script"><link rel="preload" href="/assets/js/8.e3ae2ac8.js" as="script"><link rel="preload" href="/assets/js/2.4c10abeb.js" as="script"><link rel="preload" href="/assets/js/12.43e09f93.js" as="script"><link rel="preload" href="/assets/js/3.a372cb4d.js" as="script"><link rel="prefetch" href="/assets/js/10.f3a95938.js"><link rel="prefetch" href="/assets/js/11.dbe1ae58.js"><link rel="prefetch" href="/assets/js/13.ed42cdd4.js"><link rel="prefetch" href="/assets/js/14.3ee72a34.js"><link rel="prefetch" href="/assets/js/15.a05f1602.js"><link rel="prefetch" href="/assets/js/4.3b5a20ec.js"><link rel="prefetch" href="/assets/js/5.65b1a92d.js"><link rel="prefetch" href="/assets/js/6.70d420b9.js"><link rel="prefetch" href="/assets/js/7.403ad9b5.js"><link rel="prefetch" href="/assets/js/9.a44fd27d.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.0ad39d54.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Joe Blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/about.html" class="nav-link">
+  关于
+</a></div><div class="nav-item"><a href="/history.html" class="nav-link">
+  轨迹
+</a></div><div class="nav-item"><a href="/songlian.html" class="nav-link">
+  宋濂
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/about.html" class="nav-link">
+  关于
+</a></div><div class="nav-item"><a href="/history.html" class="nav-link">
+  轨迹
+</a></div><div class="nav-item"><a href="/songlian.html" class="nav-link">
+  宋濂
+</a></div> <!----></nav>  <!----> </aside> <main class="page"> <div class="theme-default-content content__default"><ul><li>价格</li></ul> <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ClientOnly</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>slot</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>before<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>slot</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">ref</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>count<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ClientOnly</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">'CountUp'</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">props</span><span class="token operator">:</span> <span class="token punctuation">[</span> <span class="token string">'endVal'</span><span class="token punctuation">,</span> <span class="token string">'startVal'</span><span class="token punctuation">,</span> <span class="token string">'decimalPlaces'</span><span class="token punctuation">,</span> <span class="token string">'duration'</span><span class="token punctuation">,</span> <span class="token string">'delay'</span> <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token function">data</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      <span class="token literal-property property">counter</span><span class="token operator">:</span> <span class="token keyword">null</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function">mounted</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// this.init()</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">methods</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token function">init</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// import('countup.js').then(module =&gt; {</span>
+      <span class="token comment">//   this.$nextTick(() =&gt; {</span>
+      <span class="token comment">//     const { startVal = 0, decimalPlaces = 2, duration = 1000} = this</span>
+      <span class="token comment">//     this.counter = new module.CountUp(this.$refs.count, this.endVal, {</span>
+      <span class="token comment">//       startVal, decimalPlaces, duration</span>
+      <span class="token comment">//     })</span>
+
+      <span class="token comment">//     const timer = setTimeout(() =&gt; {</span>
+      <span class="token comment">//       clearTimeout(timer)</span>
+      <span class="token comment">//       this.counter.start()</span>
+      <span class="token comment">//     }, this.delay || 1000)</span>
+      <span class="token comment">//   })</span>
+      <span class="token comment">// })</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function">beforeDestroy</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>counter<span class="token punctuation">.</span><span class="token function">reset</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>counter <span class="token operator">=</span> <span class="token keyword">null</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span></code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新时间:</span> <span class="time">2022年4月22日星期五晚上7点19分</span></div></footer> <!----> </main></div><div class="global-ui"><!----><!----></div></div>
+    <script src="/assets/js/app.d5cc5d71.js" defer></script><script src="/assets/js/8.e3ae2ac8.js" defer></script><script src="/assets/js/2.4c10abeb.js" defer></script><script src="/assets/js/12.43e09f93.js" defer></script><script src="/assets/js/3.a372cb4d.js" defer></script>
+  </body>
+</html>
