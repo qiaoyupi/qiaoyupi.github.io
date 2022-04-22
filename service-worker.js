@@ -27,11 +27,11 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "d0b88ffeeabaec89179fb210373448a0"
+    "revision": "b3305189a9a3f3580a033c40f7034177"
   },
   {
     "url": "about.html",
-    "revision": "4fa53460eef1285343f342fbfed40de8"
+    "revision": "4d4502ce4c8bbbe36b964e5b39f0e646"
   },
   {
     "url": "assets/css/0.styles.0ad39d54.css",
@@ -50,16 +50,16 @@ self.__precacheManifest = [
     "revision": "0c11060a156c04587225fa4ec6da4cb2"
   },
   {
-    "url": "assets/js/12.43e09f93.js",
-    "revision": "e298c96973a5fe9ac221620f8d97ed93"
+    "url": "assets/js/12.572df711.js",
+    "revision": "bf92ab886a7ea706288dcfb3abbb321c"
   },
   {
-    "url": "assets/js/13.ed42cdd4.js",
-    "revision": "69a2ff9225421158287d738c72e1d6d0"
+    "url": "assets/js/13.f07b608d.js",
+    "revision": "3613d474f39749c7da6db2ebbb8035ef"
   },
   {
-    "url": "assets/js/14.3ee72a34.js",
-    "revision": "4222905ca16ae4d809f07a340bf453cd"
+    "url": "assets/js/14.539b3dc4.js",
+    "revision": "6910fb276c2396c099948d0ede2f7243"
   },
   {
     "url": "assets/js/15.a05f1602.js",
@@ -98,16 +98,16 @@ self.__precacheManifest = [
     "revision": "5c6d1bbeb8d09764c388b3a099cab379"
   },
   {
-    "url": "assets/js/app.d5cc5d71.js",
-    "revision": "93dc3284fadb54a5ba129e0636e94cb0"
+    "url": "assets/js/app.987b7d33.js",
+    "revision": "d9f978942fd8c238a91dc1df808349e1"
   },
   {
     "url": "countUp.html",
-    "revision": "86c98e3958679cd744dab1fc4d8a4b66"
+    "revision": "5661df34102ef6c22e807f96a093f86c"
   },
   {
     "url": "history.html",
-    "revision": "4eb531c4991a97fe665b3614c128568c"
+    "revision": "c6cf730ed82f139855d31f07de31cad1"
   },
   {
     "url": "icons/128.png",
@@ -135,7 +135,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "c0b0d6c1e91560bf5613e4e63ebad9c3"
+    "revision": "07720c3c0573b056091ff800f7560ec8"
   },
   {
     "url": "logo.jpeg",
@@ -143,7 +143,7 @@ self.__precacheManifest = [
   },
   {
     "url": "songlian.html",
-    "revision": "fc7b3fe4ef193b8d93101fc7010a293b"
+    "revision": "5a81af9beb8ad9c8326e2157e744cfc2"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
